@@ -1,0 +1,29 @@
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-caption {
+  font-size: 14px;
+  color: rgba($black, 0.5);
+  font-weight: 500;
+}
+
+.dark-mode .text-caption {
+  color: rgba($white, 0.5);
+}

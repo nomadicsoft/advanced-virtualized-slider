@@ -1,0 +1,65 @@
+@import "typography";
+@import "position";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: $white;
+  background-image: linear-gradient( rgba($white, 0.9), rgba($white, 0.9) ), url("@/assets/images/dots--black.svg");
+  background-size: 20%;
+  color: $black;
+}
+
+.dark-mode body {
+  background-color: $black;
+  background-image: linear-gradient( rgba($black, 0.9), rgba($black, 0.9) ), url("@/assets/images/dots--white.svg");
+  color: $white;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/*
+ * scrollbar
+ */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, and Safari */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
